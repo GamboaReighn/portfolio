@@ -1,65 +1,212 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Personal Portfolio Page</title>
-    <link href="styles.css" rel="stylesheet" />
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ef611c954f.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="container">
-    <header id="header">
-      <nav id="navbar">
-        <ul>
-          <div class="hover"><li class="nav-link"><a href="#welcome-section">About</a></li></div>
-          <div class="hover"><li class="nav-link"><a href="#projects">Projects</a></li></div>
-          <div class="hover"><li class="nav-link"><a href="#links">Contact</a></li></div>
-        </ul>
-      </nav>
+    <link rel="stylesheet" href="style.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">jeyyca</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
-    <section id="welcome-section">
-      <img id = "photo" src="https://mail.google.com/mail/u/0?ui=2&ik=f3a29f391a&attid=0.1&permmsgid=msg-a:r5835490591452325077&th=1847f3036d0ad31b&view=att&disp=safe&realattid=f_laja3bc80">
-      <h1 id="title">Hi I am Jeca!</h1>
-      <p id="subtitle">Student</p>
-      <a href="#projects"><div id="icon"><i class="fa-solid fa-angles-down"></i></div></a>
-      </section>
-    <section id="projects">
-      <h1 class="project-title">These are the projects that I have done</h1>
-      <div class="grid">
-        
-        <div class="project-tile"><a href="https://github.com/jeyyca/survey.git" target="_blank"> <img src="https://mail.google.com/mail/u/0?ui=2&ik=f3a29f391a&attid=0.1&permmsgid=msg-a:r5407756697221423914&th=1849f604e36a2149&view=att&disp=safe&realattid=f_las7nj400" /> </a>
-          <h1><span class="on-hover">< </span>Survey<span class="on-hover"> /></span></h1>
-        </div>
 
-        <div class="project-tile"><a href="https://github.com/jeyyca/product_page.git" target="_blank"> <img src="https://mail.google.com/mail/u/0?ui=2&ik=f3a29f391a&attid=0.1&permmsgid=msg-a:r-1723674899220218087&th=1849f75ef833b07c&view=att&disp=safe&realattid=f_las8i8iv0" /> </a>
-          <h1><span class="on-hover">< </span>Product Landing Page<span class="on-hover"> /></span></h1>
-        </div>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Jessica Reighn</span><br>Web Designer</h1>
 
-        <div class="project-tile"><a href="https://github.com/jeyyca/tribute-page.git" target="_blank"> <img src="https://mail.google.com/mail/u/0?ui=2&ik=f3a29f391a&attid=0.1&permmsgid=msg-a:r-2454844019804521060&th=1849f6b95e09a57d&view=att&disp=safe&realattid=f_las83l2k0" /> </a>
-          <h1><span class="on-hover">< </span>Tribute Page<span class="on-hover"> /></span></h1>
-        </div>
-        
-<div class="project-tile"><a href="https://github.com/jeyyca/documentation_page.git" target="_blank"> <img src="https://mail.google.com/mail/u/0?ui=2&ik=f3a29f391a&attid=0.1&permmsgid=msg-a:r7111862889125317720&th=1849f78ea900b074&view=att&disp=safe&realattid=f_las8mffc0" /> </a>
-  <h1><span class="on-hover">< </span>JavaScript Documenation Page<span class="on-hover"> /></span></h1>
-</div>     
-      </div>
-      </section>
-  <section id="links">
-    <h1>Let's work together...</h1>
-    <p>My contact is located below</p>
-    <div id="contacts">
-      <div class="con"><a href="https://www.facebook.com/jessicareighn.gamboa/" target="_blank" id="profile-link"><i class="fa-brands fa-facebook"></i></a></div>
-      <div class="con"><a href="https://github.com/jeyyca" target="_blank" id="profile-link"><i class="fa-brands fa-github"></i></a></div>
-          <div class="con"><a href="https://www.instagram.com/ssca.03/" target="_blank" id="profile-link"><i class="fa fa-instagram"></i></a></div>
+              
+            </div>
 
-      <div class="con"><a href="mailto:jessicagamboa011103@gmail.com" target="_blank" id="profile-link"><i class="fa-solid fa-at"></i></a></div>
-    </div>
-  </section>
-  <hr>
-  <section id="footer">
-    <p>© Created by Jessica Reighn Gamboa</p>
-  </section>
-    </div>
-  </body>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="pic.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="about.jpg" alt="">
+                </div>
+                    
+                <div>
+                    <h2 class="about__subtitle">I'm Jessica Reighn Gamboa</h2>
+                    <p class="about__text">Currently a student studying Information Technology with a focus on Web Technologies at the University of the Cordilleras. Originally from Baguio, I'm passionate about web development and love exploring the creative possibilities it offers. I'm constantly expanding my skills in HTML, CSS, JavaScript. I enjoy taking part in real-world projects and seeking opportunities to learn and grow. Outside of coding, I love immersing myself in Baguio's arts and culture scene and spending time outdoors. 
+                        Feel free to browse my portfolio and get in touch for collaboration opportunities. Let's create something amazing together!</p>           
+                </div>                                   
+            </div>
+        </section>
+
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills and Education</h2>
+
+            <div class="skills__container bd-grid">          
+                <div>
+                    <h2 class="skills__subtitle">Skills</h2>
+                    <p class="skills__text">Here are some of the skills I have developed:</p>
+
+                    
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">HTML</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+                                
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+                                
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+                                
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>   
+                    <h2 class="educ__subtitle">Education</h2>
+                
+            <h3>
+                Elementary
+            </h3>
+            <p>Baguio Patriotic High School - 2015</p>
+            <h3>
+                High School
+            </h3>
+            <p>Baguio Patriotic High School - 2019</p>
+            <h3>
+                Senior High School
+            </h3>
+            <p>University of the Cordilleras - 2021</p>
+            <h3>
+                College
+            </h3>
+            <p>University of the Cordilleras - Currently</p>
+                
+            </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <a href="https://github.com/jeyyca/survey.git" class="work__img">
+                    <img src="survey.PNG" alt="">
+                </a>
+                <a href="https://github.com/jeyyca/product_page.git" class="work__img">
+                    <img src="product.PNG" alt="">
+                </a>
+                <a href="https://github.com/jeyyca/tribute-page.git" class="work__img">
+                    <img src="tribute.PNG" alt="">
+                </a>
+                <a href="https://github.com/jeyyca/documentation_page.git" class="work__img">
+                    <img src="documentation.PNG" alt="">
+                </a>
+            
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Jessica Reighn</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/jessicareighn.gamboa/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/ssca.03/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/jeyyca" class="footer__icon"><i class='bx bxl-github' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; jessicagamboa. All rights reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="script.js"></script>
+</body>
 </html>
